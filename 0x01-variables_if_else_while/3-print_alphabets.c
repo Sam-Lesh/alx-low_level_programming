@@ -13,13 +13,13 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		putchar(alp[i]);
+		putchar (alp[i]);
 	}
-	for (j = 0; j < 26; j++);
+	for (j = 0; j < 26; j++)
 	{
-		putchar(ALP[j]);
+		putchar (ALP[j]);
 	}
 
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }

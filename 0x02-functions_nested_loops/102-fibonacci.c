@@ -9,17 +9,17 @@
 
 int main(void)
 {
-	int i = 1;
-	int j = 2;
-	int res = 0;
+	long int i = 1;
+	long int j = 2;
+	long int res = 0;
 	int c = 0;
 
-	printf("%d, %d", i, j);
+	printf("%ld, %ld", i, j);
 
 	while (c < 48)
 	{
 		res = (i + j);
-		printf(", %d", res);
+		printf(", %ld", res);
 		i = j;
 		j = res;
 		c++;

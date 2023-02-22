@@ -13,14 +13,15 @@ int main(void)
 
 	i = 1;
 	j = 2;
-	k = l = 0;
+	k = 0;
+	l = 2;
 
 	while (k <= 4000000)
 	{
 		k = i + j;
 		i = j;
 		j = k;
-		if ((i % 2) == 0)
+		if ((k % 2) == 0)
 		{
 			l = l + k;
 		}

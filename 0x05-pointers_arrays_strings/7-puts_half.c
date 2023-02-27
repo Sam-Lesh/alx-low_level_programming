@@ -17,7 +17,7 @@ void puts_half(char *str)
 		c++;
 	if (c % 2 == 0)
 	{
-		a = c / 2;
+		a = (c / 2) - 1;
 	}
 	if (c % 2 == 1)
 	{

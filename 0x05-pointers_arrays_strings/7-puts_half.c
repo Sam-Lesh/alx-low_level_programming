@@ -11,6 +11,7 @@
 void puts_half(char *str)
 {
 	int c = 0;
+	int a;
 
 	while (*(str + c) != '\0')
 		c++;
@@ -18,14 +19,14 @@ void puts_half(char *str)
 	{
 		for (a = (c / 2); a < c; a++)
 		{
-			_putchar(s[a]);
+			_putchar(str[a]);
 		}
 	}
 	if (c % 2 == 1)
 	{
 		for (a = (c - 1) / 2; a < c; a++)
 		{
-			_putchar(s[a]);
+			_putchar(str[a]);
 		}
 	}
 	_putchar('\n');

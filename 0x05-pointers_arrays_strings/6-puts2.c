@@ -16,7 +16,7 @@ void puts2(char *str)
 	{
 		if (c % 2 == 0)
 		{
-			_putchsr(str[c]);
+			_putchar(str[c]);
 		}
 		c++;
 	}

@@ -13,7 +13,7 @@ void rev_string(char *s)
 	int c = 0;
 	int a;
 	int b;
-	int z[];
+	int z[b];
 
 	while (*(s + c) != '\0')
 		c++;

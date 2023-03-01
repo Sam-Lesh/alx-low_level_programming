@@ -40,4 +40,5 @@ int _atoi(char *s)
 	}
 	_putchar('\n');
 	_putchar(48);
+	return (0);
 }

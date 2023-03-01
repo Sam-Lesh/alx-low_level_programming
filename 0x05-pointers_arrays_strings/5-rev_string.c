@@ -18,7 +18,7 @@ void rev_string(char *s)
 	while (*(s + c) != '\0')
 		c++;
 
-	for (a = c - 1; a >= 0; a--)
+	for (a = (c - 1); a >= 0; a--)
 	{
 		*(z + b) = (s[a]);
 		b++;

@@ -5,7 +5,7 @@
  * Return: the pointer to dest
  */
 
-chat *rot13(char *s)
+char *rot13(char *s)
 {
 	int x = 0, a;
 	char alp[] = "abcdefghijklmnoppqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

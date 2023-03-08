@@ -13,16 +13,14 @@ int check(int n, int i)
 	{
 		if (((n % i) == 0) && (n > i))
 		{
-			return (1);
+			return (0);
 		}
 		else if (((n % i) == 0) && (n == i))
 		{
-			return (0);
+			return (1);
 		}
-		else
-		{
-			return (check(n, (i + 1)));
 	}
+	return (0 + check(n, (i + 1)));
 }
 
 /**
@@ -35,6 +33,7 @@ int is_prime_number(int n)
 {
 	if (n <= 0)
 		return (0);
-	else
-		return (check(n, 2));
+	if (n == 1)
+		return (0);
+	return (check(n, 2));
 }

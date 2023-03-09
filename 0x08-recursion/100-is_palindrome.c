@@ -6,12 +6,12 @@
  * Return: returns length of string
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
 	if (*s == '\0')
 		return (0);
 	else
-		return (1 + strlen(s + 1));
+		return (1 + _strlen(s + 1));
 }
 
 /**
@@ -22,13 +22,13 @@ int strlen(char *s)
  * Return: returns 1 if characters are equal, and 0 if otherwise
  */
 
-int compare(char *s, int a, int z)
+int _compare(char *s, int a, int z)
 {
 	if (*(s + a) == *(s + z))
 	{
 		if ((a == z) || (a == z + 1))
 			return (1);
-		return (0 + compare(s, a + 1, z - 1));
+		return (0 + _compare(s, a + 1, z - 1));
 	}
 	return (0);
 }
@@ -43,5 +43,5 @@ int is_palindrome(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return (compare(s, 0, strlen(s) - 1));
+	return (_compare(s, 0, _strlen(s) - 1));
 }

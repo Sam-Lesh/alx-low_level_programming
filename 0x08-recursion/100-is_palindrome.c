@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strlen - length of string
+ * _strlen - length of string
  * @s: string
  * Return: returns length of string
  */
@@ -15,7 +15,7 @@ int _strlen(char *s)
 }
 
 /**
- * compare - checks if two characters are equal
+ * _compare - checks if two characters are equal
  * @s: string
  * @a: first character
  * @z: last character

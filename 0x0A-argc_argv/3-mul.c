@@ -5,7 +5,7 @@
  * main -multiplies two numbers
  * @argc: argument count
  * @argv: argument vector
- * Return: no return
+ * Return: returns mul
  */
 
 int main(int argc, char *argv[])

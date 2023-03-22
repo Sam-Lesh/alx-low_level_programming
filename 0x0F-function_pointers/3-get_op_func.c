@@ -2,7 +2,7 @@
 
 /**
  * get_op_func - selects the correct function to perform
- * @s: oooperator passed as argument to the program
+ * @s: operator passed as argument to the program
  *
  * Return: returns 0
  */
